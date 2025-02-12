@@ -15,3 +15,16 @@
     --foreground: #ededed;
   }
 }
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+}
