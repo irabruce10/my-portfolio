@@ -4,6 +4,7 @@ import { SKILL_TABS, SKILLS } from '@/utils/data';
 import React, { useState } from 'react';
 import { Tabs } from '../components/Tabs';
 import { SkillCard } from '../components/SkillCard';
+import { motion } from 'framer-motion';
 
 export const TechnicalProficiency = () => {
   const [tabData, setTabData] = useState(SKILLS);
@@ -51,14 +52,19 @@ export const TechnicalProficiency = () => {
 
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 min-h-[430px]">
           {tabData.map((skill, index) => (
-            <div key={skill.id}>
+            <motion.div
+              key={skill.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+            >
               <SkillCard
                 icon={<skill.icon className="w-6 h-6 text-primary" />}
                 skillName={skill.label}
                 description={skill.description}
                 progress={skill.progress}
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
