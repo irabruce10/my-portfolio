@@ -8,6 +8,8 @@ import {
   FaCss3,
   FaNodeJs,
   FaLinkedinIn,
+  FaFacebook,
+  FaSkype,
 } from 'react-icons/fa';
 
 import { BilogoJavascript } from 'react-icons/bi';
@@ -82,15 +84,23 @@ export const SKILLS = [
 ];
 
 export const ABOUT_ME = {
-  content: `About me in React.............`,
+  content: `About me in React with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment
+  About me in React with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment.
+
+
+  `,
+  content: `About me in React with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment
+  About me in React with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment.
+
+
+  `,
   socialLinks: [
-    { id: '01', label: 'instagram', link: '#', icon: <FaInstagram /> },
-    { id: '02', label: 'twit', link: '#', icon: <FaTwitter /> },
-    { id: '03', label: 'html5', link: '#', icon: <FaHtml5 /> },
-    { id: '04', label: 'css', link: '#', icon: <FaCss3 /> },
-    { id: '05', label: 'node', link: '#', icon: <FaNodeJs /> },
-    { id: '06', label: 'expr', link: '#', icon: <SiExpress /> },
-    { id: '07', label: 'mong', link: '#', icon: <SiMongodb /> },
+    { id: '01', label: 'instagram', link: '#', icon: FaInstagram },
+    { id: '02', label: 'twit', link: '#', icon: FaTwitter },
+    { id: '03', label: 'github', link: '#', icon: FaGithub },
+    { id: '04', label: 'linkedin-in', link: '#', icon: FaLinkedinIn },
+    { id: '05', label: 'facebook', link: '#', icon: FaFacebook },
+    { id: '06', label: 'skype', link: '#', icon: FaSkype },
   ],
   email: 'email@example.com',
   phone: '1234567890',

@@ -15,7 +15,7 @@ export const Tabs = ({ tabList, activeTab, onChange }) => {
             key={tab.id}
             className={`text-xs md:text-[15px] ${getActiveStyles(
               tab.value,
-            )} rounded-full px4 md:px-10 py-[16px] md:py-3`}
+            )} rounded-full px-4 md:px-10 py-[6px] md:py-3`}
             onClick={() => onChange(tab.value)}
             initial={{ opacity: 0.8, scale: 1 }}
             animate={{
