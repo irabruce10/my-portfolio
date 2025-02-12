@@ -7,6 +7,7 @@ import {
   FaHtml5,
   FaCss3,
   FaNodeJs,
+  FaLinkedinIn,
 } from 'react-icons/fa';
 
 import { BilogoJavascript } from 'react-icons/bi';
@@ -29,6 +30,8 @@ export const STATS = [
   { id: '01', count: '10', label: 'Years of \nExperience' },
   { id: '02', count: '5', label: 'Projects \nCompleted' },
   { id: '03', count: '50', label: 'GitHub \nStars' },
+  { id: '04', count: '100+', label: 'Followers \nOn GitHub' },
+  { id: '05', count: '5', label: 'Mentors \nAvailable' },
 ];
 
 export const SKILL_TABS = [
@@ -42,21 +45,40 @@ export const SKILL_TABS = [
 export const SKILLS = [
   {
     id: '01',
-    icon: <FaReact />,
-    label: 'ReactJS',
+    icon: FaHtml5,
+    label: 'Html5',
     progress: 95,
     type: 'frontend',
-    description: 'Exper....',
+    description:
+      'Exper....  experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment',
   },
   {
     id: '02',
-    icon: <FaGithub />,
-    label: 'GitHub',
+    icon: FaCss3,
+    label: 'Css3',
     progress: 95,
     type: 'frontend',
-    description: '',
+    description:
+      ' experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment',
   },
-  { id: '03', icon: <FaLinkedin />, label: 'LinkedIn' },
+  {
+    id: '03',
+    icon: FaReact,
+    label: 'React JS',
+    progress: 90,
+    type: 'frontend',
+    description:
+      'Experiment with LinkedIn  experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment',
+  },
+  {
+    id: '04',
+    icon: FaNodeJs,
+    label: 'Node JS',
+    progress: 90,
+    type: 'backend',
+    description:
+      'Experiment with LinkedIn  experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment',
+  },
 ];
 
 export const ABOUT_ME = {
