@@ -2,7 +2,7 @@
 
 import { PROJECTS } from '@/utils/data';
 import useEmblaCarousel from 'embla-carousel-react';
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 import { ProjectCard } from '../components/ProjectCard';
 
@@ -16,6 +16,12 @@ export const MyProject = () => {
     setCanScrollPrev(emblaApi.canScrollPrev());
     setCanScrollNext(emblaApi.canScrollNext());
   });
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    emblaApi.on('select', updateScrollButtons);
+    updateScrollButtons();
+  }, [emblaApi, updateScrollButtons]);
 
   return (
     <section id="projects" className=" bg-background mt-14">
@@ -58,6 +64,16 @@ export const MyProject = () => {
             disabled={!canScrollPrev}
           >
             <IoIosArrowForward className="rotate-180" />
+          </button>
+
+          <button
+            className={`arrow-btn -right-5 ${
+              !canScrollPrev ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
+            onClick={() => emblaApi && emblaApi.scrollNext()}
+            disabled={!canScrollPrev}
+          >
+            <IoIosArrowForward />
           </button>
         </div>
       </div>

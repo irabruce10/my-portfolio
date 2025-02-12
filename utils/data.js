@@ -22,10 +22,10 @@ import {
 
 export const Menu_Links = [
   { id: '01', label: 'Home', offset: -100, to: 'home' },
-  { id: '02', label: 'About', offset: -80, to: 'about' },
-  { id: '03', label: 'Contact', offset: -80, to: 'contact' },
-  { id: '04', label: 'Skills', offset: -80, to: 'skills' },
-  { id: '05', label: 'Projects', offset: -80, to: 'projects' },
+  { id: '02', label: 'Skills', offset: -80, to: 'skills' },
+  { id: '03', label: 'About', offset: -80, to: 'about' },
+  { id: '04', label: 'Projects', offset: -80, to: 'projects' },
+  { id: '05', label: 'Contact', offset: -80, to: 'contact' },
 ];
 
 export const STATS = [
@@ -33,7 +33,6 @@ export const STATS = [
   { id: '02', count: '5', label: 'Projects \nCompleted' },
   { id: '03', count: '50', label: 'GitHub \nStars' },
   { id: '04', count: '100+', label: 'Followers \nOn GitHub' },
-  { id: '05', count: '5', label: 'Mentors \nAvailable' },
 ];
 
 export const SKILL_TABS = [
@@ -133,6 +132,12 @@ export const PROJECTS = [
     id: '04',
     title: 'Project 4',
     image: '/images/project4.png',
+    tags: ['project', 'project'],
+  },
+  {
+    id: '05',
+    title: 'Project 5',
+    image: '/images/project2.png',
     tags: ['project', 'project'],
   },
 ];

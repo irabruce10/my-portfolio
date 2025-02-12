@@ -11,7 +11,7 @@ import { StatInfoCard } from '../components/StatInfoCard';
 
 export const Hero = () => {
   return (
-    <section id="hero" className="container mx-auto px-8">
+    <section id="home" className="container mx-auto px-8">
       <div className="flex flex-col lg:flex-row items-center justify-between mt-[80px] gap-14">
         <div className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0">
           <h3 className="text-xl lg:text-2xl font-medium text-black ">
@@ -71,7 +71,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="flex gap-12 m-16 md:mt-24 flex-wrap">
+      <div className="flex gap-12 mt-16 md:mt-24 flex-wrap">
         {STATS.map((item) => {
           return (
             <StatInfoCard key={item.id} count={item.count} label={item.label} />
