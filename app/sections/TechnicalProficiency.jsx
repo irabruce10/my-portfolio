@@ -29,9 +29,9 @@ export const TechnicalProficiency = () => {
   return (
     <section id="skills" className="bg-background mt-20">
       <div className="container mx-auto p-10">
-        <div className="w-full lg:w-[60vh] mx-auto">
+        <div className="w-full lg:w-[60vw] mx-auto">
           <h4 className="section-title">My Technical Proficiency</h4>
-          <p className="text-sm text-center mt-4 leading-4">
+          <p className="text-sm text-center mt-4 leading-6">
             I am an experienced Frontend Developer with a strong foundation in
             JavaScript, ReactJS, NextJS, and TypeScript. I specialize in
             building responsive, accessible, and user-friendly web applications.

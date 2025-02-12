@@ -8,7 +8,7 @@ import { TechnicalProficiency } from './sections/TechnicalProficiency';
 
 export default function Home() {
   return (
-    <div className="mb-80">
+    <div className="mb-0">
       <NavBar />
       <Hero />
       <TechnicalProficiency />
