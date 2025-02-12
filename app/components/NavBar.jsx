@@ -3,7 +3,7 @@
 import { Menu_Links } from '@/utils/data';
 import Image from 'next/image';
 import { Link } from 'react-scroll';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -11,6 +11,23 @@ export const NavBar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleRisize = () => {
+      if (window.innerWidth >= 768) {
+        setIsOpen(true);
+      } else {
+        setIsOpen(false);
+      }
+    };
+
+    handleRisize();
+
+    window.addEventListener('resize', handleRisize);
+
+    return () => window.removeEventListener('resize', handleRisize);
+  }, []);
+
   return (
     <nav className="container mx-auto sticky top-5 z-10">
       <div className="flex items-center justify-between rounded-full bg-white/25 border border-[#fee6cc] backdrop-blur-[10px] m-5 p-3 md:p-0 ">

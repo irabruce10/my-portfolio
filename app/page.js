@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <div>
       <NavBar />
-      {/* <Hero />
+      <Hero />
 
-      <h1 className=" mt-3">Home</h1> */}
+      {/*  <h1 className=" mt-3">Home</h1> */}
     </div>
   );
 }
