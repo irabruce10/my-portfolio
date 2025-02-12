@@ -111,13 +111,13 @@ export const PROJECTS = [
   {
     id: '01',
     title: 'Project 1',
-    image: '/images/project1.jpg',
-    tags: ['project', 'project'],
+    image: '/images/project1.png',
+    tags: ['project1', 'project'],
   },
   {
     id: '02',
     title: 'Project 2',
-    image: '/images/project2.jpg',
+    image: '/images/project2.png',
     tags: ['project', 'project'],
   },
   {
@@ -126,7 +126,13 @@ export const PROJECTS = [
     // description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     // link: '#',
     // github: '#',
-    image: '/images/project3.jpg',
+    image: '/images/project3.png',
+    tags: ['project', 'project'],
+  },
+  {
+    id: '04',
+    title: 'Project 4',
+    image: '/images/project4.png',
     tags: ['project', 'project'],
   },
 ];
