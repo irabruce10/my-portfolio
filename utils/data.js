@@ -21,6 +21,8 @@ export const Menu_Links = [
   { id: '01', label: 'Home', offset: -100, to: 'home' },
   { id: '02', label: 'About', offset: -80, to: 'about' },
   { id: '03', label: 'Contact', offset: -80, to: 'contact' },
+  { id: '04', label: 'Skills', offset: -80, to: 'skills' },
+  { id: '05', label: 'Projects', offset: -80, to: 'projects' },
 ];
 
 export const STATS = [
