@@ -13,10 +13,8 @@ import Link from 'next/link';
 
 export const Hero = () => {
   const downloadHandler = () => {
-    console.log('Dwo');
-
     const link = document.createElement('a');
-    link.href = '/CV/Bruce.pdf'; // /public/path/to/your-resume.pdf Replace with your actual file path
+    link.href = '/CV/Bruce.pdf';
     link.download = 'Bruce-resume.pdf';
     link.click();
   };
@@ -51,7 +49,7 @@ export const Hero = () => {
               onClick={downloadHandler}
               className="flex-1 md:flex-none action-btn btn-scale-anim"
             >
-              Download Resume
+              Download My Resume
             </button>
           </div>
         </div>
