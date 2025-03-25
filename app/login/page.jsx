@@ -7,8 +7,18 @@ export default function LoginPage() {
   const [email, setEmail] = useState('irabruce20@gmail.com');
   const [password, setPassword] = useState('Mars.b11');
   const [error, setError] = useState(null);
+
   return (
     <>
+      {/* <form>
+        <label htmlFor="email">Email:</label>
+        <input id="email" name="email" type="email" required />
+        <label htmlFor="password">Password:</label>
+        <input id="password" name="password" type="password" required />
+        <button formAction={login}>Log in</button>
+        <button formAction={signup}>Sign up</button>
+      </form> */}
+
       <div className="flex min-h-screen items-center justify-center bg-gray-100 p-6">
         <div className="w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
           <h1 className="text-2xl font-bold text-gray-800">Login</h1>

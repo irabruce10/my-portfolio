@@ -13,7 +13,6 @@ export async function login(formData) {
     password: formData.get('password'),
   };
 
-  console.log('Login', data);
   const { error } = await supabase.auth.signInWithPassword(data);
 
   if (error) {
@@ -21,14 +20,12 @@ export async function login(formData) {
   }
 
   revalidatePath('/', 'layout');
-  redirect('/');
+  redirect('/private');
 }
 
 export async function signup(formData) {
   const supabase = await createClient();
 
-  // type-casting here for convenience
-  // in practice, you should validate your inputs
   const data = {
     email: formData.get('email'),
     password: formData.get('password'),
