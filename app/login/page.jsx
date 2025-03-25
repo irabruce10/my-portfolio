@@ -44,15 +44,15 @@ export default function LoginPage() {
               formAction={login}
               className="mt-4 w-full rounded-lg bg-blue-600 p-2 text-white hover:bg-blue-700"
             >
-              Sign In
+              LogIn
             </button>
 
-            <button
+            {/* <button
               formAction={signup}
               className="mt-4 w-full rounded-lg bg-blue-600 p-2 text-white hover:bg-blue-700"
             >
               Sign Up
-            </button>
+            </button> */}
           </form>
         </div>
       </div>

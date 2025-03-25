@@ -11,5 +11,9 @@ export default async function PrivatePage() {
     redirect('/');
   }
 
-  return <p>Hello {data.user?.email}</p>;
+  return (
+    <div>
+      <p>Welcome, {data.user?.email}</p>;
+    </div>
+  );
 }
