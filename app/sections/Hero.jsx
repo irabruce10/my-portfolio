@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import profileImage from '/public/images/profile.png';
 import Image from 'next/image';
@@ -8,8 +9,18 @@ import ICON_4 from '/public/icons/React.png';
 import ICON_5 from '/public/icons/postgresql.png';
 import { STATS } from '@/utils/data';
 import { StatInfoCard } from '../components/StatInfoCard';
+import Link from 'next/link';
 
 export const Hero = () => {
+  const downloadHandler = () => {
+    console.log('Dwo');
+
+    const link = document.createElement('a');
+    link.href = '/CV/Bruce.pdf'; // /public/path/to/your-resume.pdf Replace with your actual file path
+    link.download = 'Bruce-resume.pdf';
+    link.click();
+  };
+
   return (
     <section id="home" className="container mx-auto px-8">
       <div className="flex flex-col lg:flex-row items-center justify-between mt-[80px] gap-14">
@@ -30,10 +41,16 @@ export const Hero = () => {
           </p>
 
           <div className="flex justify-center lg:justify-start gap-4 md:gap-8 mt-6">
-            <button className="flex-1 md:flex-none action-btn-outline btn-scale-anim">
-              View My Work
-            </button>
-            <button className="flex-1 md:flex-none action-btn btn-scale-anim">
+            <Link href="https://github.com/irabruce10" passHref target="_blank">
+              <button className="flex-1 md:flex-none action-btn-outline btn-scale-anim">
+                View My Work
+              </button>
+            </Link>
+
+            <button
+              onClick={downloadHandler}
+              className="flex-1 md:flex-none action-btn btn-scale-anim"
+            >
               Download Resume
             </button>
           </div>
