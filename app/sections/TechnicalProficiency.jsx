@@ -32,15 +32,19 @@ export const TechnicalProficiency = () => {
         <div className="w-full lg:w-[60vw] mx-auto">
           <h4 className="section-title">My Technical Proficiency</h4>
           <p className="text-sm text-center mt-4 leading-6">
-            I am an experienced Frontend Developer with a strong foundation in
-            JavaScript, ReactJS, NextJS, and TypeScript. I specialize in
-            building responsive, accessible, and user-friendly web applications.
-            I have experience working with various libraries and frameworks,
-            including Redux, MobX, and Tailwind CSS. I am also proficient in
-            debugging, testing, and maintaining existing applications. I am also
-            an excellent at collaborating with backend developers to build
-            scalable and efficient APIs. I am always looking for opportunities
-            to learn and grow my skills.
+            I am an experienced Fullstack Developer with a strong foundation in
+            JavaScript, ReactJS, NextJS, TypeScript, and Node.js. I specialize
+            in building responsive, accessible, and user-friendly web
+            applications. My expertise extends to working with various libraries
+            and frameworks, including Redux, and Tailwind CSS. I am proficient
+            in debugging, testing, and maintaining existing applications,
+            ensuring seamless performance and scalability. Additionally, I excel
+            at collaborating with backend developers to build efficient and
+            scalable APIs, utilizing database technologies like PostgreSQL and
+            MongoDB. My passion for continuous learning drives me to stay
+            updated with the latest industry trends and best practices. I am
+            always looking for new challenges and opportunities to enhance my
+            skills and contribute to impactful projects.
           </p>
         </div>
 

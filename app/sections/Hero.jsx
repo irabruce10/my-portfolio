@@ -15,15 +15,18 @@ export const Hero = () => {
       <div className="flex flex-col lg:flex-row items-center justify-between mt-[80px] gap-14">
         <div className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0">
           <h3 className="text-xl lg:text-2xl font-medium text-black ">
-            👋 Hi, I'm Bruce Irakoze
+            👋 Hi, I'm Bruce IRAKOZE
           </h3>
           <h1 className="w-full lg:w-[480px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] mt-3 bg-gradient-primary bg-clip-text text-transparent ">
-            Building scalable & User Centric Web Apps{' '}
+            Building scalable & User Centric Web Apps
           </h1>
           <p className="w-full lg:w-[500px] lg:text-base mt-4">
-            I'm a passionate Frontend Developer crafting responsive, accessible,
-            and user-friendly web applications. I specialize in ReactJS, NextJS,
-            and TypeScript.
+            I'm a passionate Fullstack Developer crafting responsive,
+            accessible, and user-friendly web applications and applications. I
+            specialize in ReactJS, React Native/Expo, NextJS, TypeScript, and
+            Node.js. With a strong foundation in front-end and back-end
+            technologies, I build seamless digital experiences that prioritize
+            performance and scalability.
           </p>
 
           <div className="flex justify-center lg:justify-start gap-4 md:gap-8 mt-6">
