@@ -1,6 +1,16 @@
+import Link from 'next/link';
 import React from 'react';
 
-export const ProjectCard = ({ image, title, tags }) => {
+export const ProjectCard = ({
+  image,
+  title,
+  tags,
+  icon,
+  linkGit,
+  linkLive,
+}) => {
+  console.log('link1', linkGit);
+  console.log('link2', linkLive);
   return (
     <div className=" h-full bg-white rounded-xl overflow-hidden shadow-md mx-2 ">
       <img
@@ -15,12 +25,25 @@ export const ProjectCard = ({ image, title, tags }) => {
         </h3>
         <div className="flex flex-wrap gap-2 mt-2">
           {tags.map((tag, index) => (
-            <span
-              key={index}
-              className="text-xs text-primary bg-orange-100 px-3 py-1 rounded"
-            >
-              {tag}
-            </span>
+            <div key={index}>
+              {tag === 'Github' ? (
+                <Link
+                  href={`${linkGit}?tag=${tag}`}
+                  target="blanket"
+                  className="text-xs text-primary bg-orange-100 px-3 py-1 rounded"
+                >
+                  {tag}
+                </Link>
+              ) : (
+                <Link
+                  href={`${linkLive}?tag=${tag}`}
+                  target="blanket"
+                  className="text-xs text-primary bg-orange-100 px-3 py-1 rounded"
+                >
+                  {tag}
+                </Link>
+              )}
+            </div>
           ))}
         </div>
       </div>

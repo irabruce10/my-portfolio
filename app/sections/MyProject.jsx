@@ -30,8 +30,8 @@ export const MyProject = () => {
           <h4 className="section-title">Recent Project</h4>
           <p className="text-sm text-center mt-4 leading-4">
             I've worked on several projects in the past, showcasing my passion
-            for building scalable and user-centric web applications. Here are a
-            few of my most recent projects:
+            for building scalable and user-centric web apps and mobile Apps.
+            Here are a few of my most recent projects:
           </p>
         </div>
 
@@ -48,6 +48,9 @@ export const MyProject = () => {
                     image={project.image}
                     title={project.title}
                     tags={project.tags}
+                    icon={project.icon}
+                    linkGit={project.linkGit}
+                    linkLive={project.linkLive}
                   />
                 </div>
               ))}
