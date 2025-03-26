@@ -12,16 +12,34 @@ import {
   FaSkype,
   FaNode,
   FaTypeScript,
+  FaFigma,
 } from 'react-icons/fa';
 
 import { BilogoJavascript, BiLogoTailwindCss } from 'react-icons/bi';
-import { RiNextjsFill } from 'react-icons/ri';
+import { RiNextjsFill, RiSupabaseFill } from 'react-icons/ri';
+import { GrGraphQl } from 'react-icons/gr';
 
 import {
+  SiCanva,
+  SiCircleci,
+  SiCypress,
+  SiDocker,
+  SiExpo,
   SiExpress,
+  SiFlydotio,
+  SiGithub,
+  SiGraphql,
+  SiHeroku,
+  SiJenkins,
+  SiJest,
+  SiKubernetes,
+  SiLinux,
   SiMongodb,
+  SiNetlify,
   SiPostgresql,
+  SiPostman,
   SiTypescript,
+  SiVercel,
   SiWebpack,
 } from 'react-icons/si';
 import {
@@ -30,6 +48,7 @@ import {
   VscTerminalPowershell,
 } from 'react-icons/vsc';
 import { IoLogoJavascript } from 'react-icons/io';
+import { IoLogoFirebase } from 'react-icons/io5';
 
 export const Menu_Links = [
   { id: '01', label: 'Home', offset: -100, to: 'home' },
@@ -52,7 +71,8 @@ export const SKILL_TABS = [
   { id: '03', label: 'Backend', value: 'backend' },
   { id: '04', label: 'Mobile', value: 'mobile' },
   { id: '05', label: 'DevOps', value: 'devops' },
-  { id: '06', label: 'UI/UX', value: 'ui' },
+  { id: '06', label: 'Testing', value: 'testing' },
+  { id: '07', label: 'UI/UX', value: 'ui' },
 ];
 
 export const SKILLS = [
@@ -112,7 +132,7 @@ export const SKILLS = [
   {
     id: '07',
     icon: FaReact,
-    label: 'React',
+    label: 'ReactJS',
     progress: 90,
     type: 'frontend',
     description:
@@ -123,91 +143,296 @@ export const SKILLS = [
   {
     id: '08',
     icon: RiNextjsFill,
-    label: 'Next JS',
+    label: 'NextJS',
     progress: 90,
     type: 'frontend',
     description:
       'JavaScript framework for building universal (isomorphic) React apps with server-side rendering, static generation, and incremental static regeneration, Developing SSR and SSG React apps with Next.js.',
   },
 
-  ,
-  //mongoDB
-
-  //graphql
-  // {
-  //   id: '08',
-  //   icon: VscCommentUnresolved,
-  //   label: 'GraphQL',
-
-  // {
-  //   id: '04',
-  //   icon: FaNodeJs,
-  //   label: 'Node JS',
-  //   progress: 90,
-  //   type: 'backend',
-  //   description:
-  //     'Experiment with LinkedIn  experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment',
-  // },
-
-  //mobile
-  // {
-  //   id: '05',
-  //   icon: FaNode,
-  //   label: 'Expo',
-  //   progress: 90,
-  //   type: 'mobile',
-  //   description:
-  //     'Experiment with LinkedIn  experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment',
-  // },
-
-  //devops
+  //Backend
   {
-    id: '16',
-    icon: VscVscode,
-    label: 'VS Code',
-    progress: 90,
-    type: 'devops',
-    description: 'Well-versed in TypeScript for scalable applications.',
-  },
-  // UI
-  {
-    id: '17',
-    icon: SiWebpack,
-    label: 'Webpack',
-    progress: 90,
-    type: 'ui',
-    description:
-      'Experiment with LinkedIn  experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment',
-  },
-  {
-    id: '18',
-    icon: SiMongodb,
-    label: 'MongoDB',
+    id: '09',
+    icon: FaNode,
+    label: 'NodeJS',
     progress: 90,
     type: 'backend',
     description:
-      'Experiment with LinkedIn  experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment',
+      'Proficient in building scalable and efficient backend applications using Node.js. Experienced in event-driven architecture, asynchronous programming, and optimizing server-side performance.',
+  },
+
+  //express
+  {
+    id: '10',
+    icon: SiExpress,
+    label: 'Express',
+    progress: 60,
+    type: 'backend',
+    description:
+      'Node.js web application framework that provides a robust set of features for building web applications and APIs. Expertise in developing RESTful APIs with Express.js. Skilled in middleware integration, error handling.',
+  },
+
+  //mongoDB
+
+  {
+    id: '11',
+    icon: SiMongodb,
+    label: 'MongoDB',
+    progress: 60,
+    type: 'backend',
+    description:
+      'MongoDB is a NoSQL database that uses a document-oriented data model, providing high scalability and flexibility for applications.',
+  },
+
+  //postgres
+
+  {
+    id: '12',
+    icon: SiPostgresql,
+    label: 'PostgreSQL',
+    progress: 90,
+    type: 'backend',
+    description:
+      'Proficient in designing relational and NoSQL database schemas. Experienced in writing optimized queries, indexing strategies, and handling transactions efficiently.',
+  },
+  {
+    id: '13',
+    icon: SiGraphql,
+    label: 'GraphQl',
+    progress: 80,
+    type: 'backend',
+    description:
+      'Experienced in designing and implementing GraphQL APIs for efficient data fetching and manipulation. Skilled in schema design, queries, mutations. ',
+  },
+
+  //supabase
+
+  {
+    id: '15',
+    icon: RiSupabaseFill,
+    label: 'Supabase',
+    progress: 85,
+    type: 'backend',
+    description:
+      'Strong knowledge of Supabase for backend-as-a-service (BaaS) solutions. Experienced in authentication, real-time database operations, and integrating with PostgreSQL.',
+  },
+
+  {
+    id: '16',
+    icon: IoLogoFirebase,
+    label: 'Firebase',
+    progress: 85,
+    type: 'backend',
+    description:
+      'Experienced in using Firebase for backend services, including Firestore, Realtime Database, Authentication, Cloud Functions, and Storage.',
+  },
+
+  // mobile
+  {
+    id: '17',
+    icon: SiExpo,
+    label: 'Expo (React Native)',
+    progress: 95,
+    type: 'mobile',
+    description:
+      ' Proficient in building cross-platform mobile applications using Expo with React Native. Experienced in managing Expo workflows, optimizing performance, and integrating native modules.',
+  },
+  // DevOps
+
+  // Docker
+  {
+    id: '18',
+    icon: SiDocker,
+    label: 'Docker',
+    progress: 55,
+    type: 'devops',
+    description:
+      'Proficient in building Docker containers for microservices and deploying them on Kubernetes. Experienced in managing Dockerfiles, creating Docker Compose files, and optimizing container images.',
+  },
+
+  //github
+  {
+    id: '19',
+    icon: SiGithub,
+    label: 'GitHub',
+    progress: 91,
+    type: 'devops',
+    description:
+      'Experienced in using GitHub for version control, collaborating with other developers, and managing projects. Skilled in branching, merging, and resolving conflicts.',
+  },
+
+  // Docker
+  {
+    id: '20',
+    icon: SiDocker,
+    label: 'Docker',
+    progress: 70,
+    type: 'devops',
+    description:
+      'Proficient in building Docker containers for microservices and deploying them on Kubernetes. Experienced in managing Dockerfiles, creating Docker Compose files, and optimizing container images.',
+  },
+
+  // Lunix
+  {
+    id: '21',
+    icon: SiLinux,
+    label: 'Linux',
+    progress: 96,
+    type: 'devops',
+    description:
+      'Proficient in using Linux for managing servers, managing system resources, and performing administrative tasks. Experienced in configuring Linux systems, managing packages, and optimizing system performance.',
+  },
+  {
+    id: '22',
+    icon: VscVscode,
+    label: 'VS Code',
+    progress: 98,
+    type: 'devops',
+    description: 'Well-versed in TypeScript for scalable applications.',
+  },
+
+  // vercel
+  {
+    id: '23',
+    icon: SiVercel,
+    label: 'Vercel',
+    progress: 74,
+    type: 'devops',
+    description:
+      'Experienced in deploying React applications to Vercel, a serverless platform for hosting and deploying applications.',
+  },
+
+  // fly.io
+  {
+    id: '24',
+    icon: SiFlydotio,
+    label: 'Fly.io',
+    progress: 80,
+    type: 'devops',
+    description:
+      'Experienced in deploying React applications to Fly.io, a serverless platform for hosting and deploying applications.',
+  },
+
+  // heroku
+  {
+    id: '25',
+    icon: SiHeroku,
+    label: 'Heroku',
+    progress: 60,
+    type: 'devops',
+    description:
+      'Experienced in deploying React applications to Heroku, a cloud platform for hosting and deploying applications.',
+  },
+
+  // netlify
+  {
+    id: '26',
+    icon: SiNetlify,
+    label: 'Netlify',
+    progress: 70,
+    type: 'devops',
+    description:
+      'Experienced in deploying React applications to Netlify, a cloud platform for hosting and deploying applications.',
+  },
+
+  // github actions
+
+  // circleci
+  {
+    id: '27',
+    icon: SiCircleci,
+    label: 'CircleCI',
+    progress: 50,
+    type: 'devops',
+    description:
+      'Experienced in setting up CI/CD pipelines using CircleCI for React applications and APIs. Experienced in managing workflows, configuring jobs, and integrating with other tools.',
+  },
+
+  // testing
+
+  // jest
+
+  {
+    id: '28',
+    icon: SiJest,
+    label: 'Jest',
+    progress: 70,
+    type: 'testing',
+    description:
+      'Proficient in writing unit tests using Jest for React components, backend services, and APIs. Experienced in setting up test environments, creating test suites, and writing assertions.',
+  },
+
+  // E2E
+  {
+    id: '29',
+    icon: SiCypress,
+    label: '2E2',
+    progress: 70,
+    type: 'testing',
+    description:
+      'Proficient in writing end-to-end tests using Cypress for React applications and APIs. Experienced in setting up test environments, creating test suites, and writing assertions.',
+  },
+
+  // UI
+  // figma
+  {
+    id: '30',
+    icon: FaFigma,
+    label: 'Figma',
+    progress: 60,
+    type: 'ui',
+    description:
+      'Skilled in translating Figma/Adobe XD designs into pixel-perfect React & Next.js applications while maintaining design consistency and responsiveness.',
+  },
+
+  // canvas
+  {
+    id: '31',
+    icon: SiCanva,
+    label: 'Canva',
+    progress: 50,
+    type: 'ui',
+    description:
+      'Skilled in translating Canva designs into pixel-perfect React & Next.js applications while maintaining design consistency and responsiveness.',
+  },
+
+  // postman
+  {
+    id: '32',
+    icon: SiPostman,
+    label: 'Postman',
+    progress: 50,
+    type: 'testing',
+    description:
+      'Experienced in using Postman for API testing, mocking, and testing APIs. Experienced in creating collections, sending requests, and managing test cases.',
   },
 ];
 
 export const ABOUT_ME = {
-  content: `About me in React with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment
-  About me in React with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment.
-
-
-  `,
-  content: `About me in React with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment
-  About me in React with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment with GitHub experiment.
+  content: `I am a passionate and dedicated Fullstack Web Developer with a strong foundation in both front-end and back-end technologies. My journey in software development has allowed me to build robust, user-centric web and mobile applications using modern frameworks and tools. I specialize in React.js, Next.js, TypeScript, Node.js, PostgreSQL, and other key technologies. Additionally, I have experience in mobile development, particularly with React Native and Expo.
+  I am always eager to learn and grow, My problem-solving skills, collaborative nature, and commitment to continuous learning drive me to consistently deliver creative solutions and collaborate effectively with development teams.
 
 
   `,
   socialLinks: [
-    { id: '01', label: 'instagram', link: '#', icon: FaInstagram },
-    { id: '02', label: 'twit', link: '#', icon: FaTwitter },
-    { id: '03', label: 'github', link: '#', icon: FaGithub },
-    { id: '04', label: 'linkedin-in', link: '#', icon: FaLinkedinIn },
-    { id: '05', label: 'facebook', link: '#', icon: FaFacebook },
-    { id: '06', label: 'skype', link: '#', icon: FaSkype },
+    {
+      id: '02',
+      label: 'twit',
+      link: 'https://x.com/dev_IraBruce',
+      icon: FaTwitter,
+    },
+    {
+      id: '03',
+      label: 'github',
+      link: 'https://github.com/irabruce10',
+      icon: FaGithub,
+    },
+    {
+      id: '04',
+      label: 'linkedin-in',
+      link: 'https://www.linkedin.com/in/bruce-irakoze-421816230/',
+      icon: FaLinkedinIn,
+    },
   ],
   email: 'email@example.com',
   phone: '1234567890',

@@ -3,6 +3,7 @@ import React from 'react';
 import profileImage from '/public/images/profile.png';
 import { ABOUT_ME } from '@/utils/data';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const AboutMe = () => {
   return (
@@ -29,9 +30,14 @@ export const AboutMe = () => {
 
           <div className="flex gap-4 ">
             {ABOUT_ME.socialLinks.map((item) => (
-              <a key={item.label} className="cursor-pointer group">
-                <item.icon className=" text-2xl text-secondary transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:translate-y-[2px] group-hover:text-primary" />
-              </a>
+              <Link
+                href={item.link}
+                target="_blank"
+                key={item.id}
+                className="cursor-pointer group"
+              >
+                <item.icon className="text-2xl text-secondary transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:translate-y-[2px] group-hover:text-primary" />
+              </Link>
             ))}
           </div>
         </div>
