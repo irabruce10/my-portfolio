@@ -17,6 +17,10 @@ export default {
       backgroundImage: {
         'gradient-primary': 'linear-gradient(to right, #f4a44f, #ac573f)',
       },
+      fontFamily: {
+        primary: ['Poppins', 'sans-serif'],
+        satisfy: ['Satisfy', 'sans-serif'],
+      },
     },
   },
   plugins: [],

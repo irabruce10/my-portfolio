@@ -5,6 +5,10 @@ import Image from 'next/image';
 import { Link } from 'react-scroll';
 import React, { useEffect, useState } from 'react';
 
+import { Satisfy } from 'next/font/google';
+
+const satisfy = Satisfy({ subsets: ['latin'], weight: '400' });
+
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(true);
 
@@ -32,7 +36,14 @@ export const NavBar = () => {
     <nav className="container mx-auto sticky top-5 z-10">
       <div className="flex items-center justify-between rounded-full bg-white/25 border border-[#fee6cc] backdrop-blur-[10px] m-5 p-3 md:p-0 ">
         {/*Logo*/}
-        <h1>Time to Program</h1>
+        <div className={satisfy.className}>
+          <h1 className="px-2">
+            👋 Hi, I'm{' '}
+            <span className="text-primary font-bold px-2 text-sm lg:text-2xl">
+              Bruce IRAKOZE
+            </span>
+          </h1>
+        </div>
 
         {/*Menu Hamburger*/}
         <button
@@ -80,9 +91,15 @@ export const NavBar = () => {
             </li>
           ))}
         </ul>
-        <button className="hidden md:block h-12 text-[15px] font-medium text-white bg-gradient-primary rounded-full px-9 transition-transform duration-300 ease-in-out hover:scale-105">
-          Hire Me
-        </button>
+        <li className="hidden md:block h-12 text-[15px] font-medium text-white bg-gradient-primary rounded-full px-9 transition-transform duration-300 ease-in-out hover:scale-105">
+          <a
+            href="mailto:irabruce20@gmail.com"
+            target="_blank"
+            className="block  py-3 font-semibold"
+          >
+            Hire me
+          </a>
+        </li>
       </div>
     </nav>
   );

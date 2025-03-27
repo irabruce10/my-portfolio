@@ -15,9 +15,8 @@ import {
   FaFigma,
 } from 'react-icons/fa';
 
-import { BilogoJavascript, BiLogoTailwindCss } from 'react-icons/bi';
+import { BiLogoTailwindCss } from 'react-icons/bi';
 import { RiNextjsFill, RiSupabaseFill } from 'react-icons/ri';
-import { GrGraphQl } from 'react-icons/gr';
 
 import {
   SiCanva,
@@ -42,11 +41,7 @@ import {
   SiVercel,
   SiWebpack,
 } from 'react-icons/si';
-import {
-  VscVscode,
-  VscCommentUnresolved,
-  VscTerminalPowershell,
-} from 'react-icons/vsc';
+import { VscVscode } from 'react-icons/vsc';
 import { IoLogoJavascript } from 'react-icons/io';
 import { IoLogoFirebase } from 'react-icons/io5';
 
@@ -434,9 +429,9 @@ export const ABOUT_ME = {
       icon: FaLinkedinIn,
     },
   ],
-  email: 'email@example.com',
-  phone: '1234567890',
-  address: '123 Main St, City, State, Zip',
+  email: 'irabruce20@gmail.com',
+  phone: '+43 681 10842361',
+  address: 'Leonfeldner straße 158, Linz 4040',
 };
 
 export const PROJECTS = [
@@ -470,14 +465,6 @@ export const PROJECTS = [
     id: '04',
     title: 'Project 4',
     image: '/images/project4.png',
-    tags: ['Github', 'Live View'],
-    linkGit: 'https://github.com/irabruce10',
-    linkLive: 'https://google.com',
-  },
-  {
-    id: '05',
-    title: 'Project 5',
-    image: '/images/project2.png',
     tags: ['Github', 'Live View'],
     linkGit: 'https://github.com/irabruce10',
     linkLive: 'https://google.com',

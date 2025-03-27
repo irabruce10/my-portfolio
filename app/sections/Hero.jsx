@@ -23,9 +23,9 @@ export const Hero = () => {
     <section id="home" className="container mx-auto px-8">
       <div className="flex flex-col lg:flex-row items-center justify-between mt-[80px] gap-14">
         <div className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0">
-          <h3 className="text-xl lg:text-2xl font-medium text-black ">
+          {/* <h3 className="text-xl lg:text-2xl font-medium text-black ">
             👋 Hi, I'm Bruce IRAKOZE
-          </h3>
+          </h3> */}
           <h1 className="w-full lg:w-[480px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] mt-3 bg-gradient-primary bg-clip-text text-transparent ">
             Building scalable & User Centric Web Apps
           </h1>

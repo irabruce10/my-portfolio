@@ -61,7 +61,13 @@ export const Contact = () => {
                 className="input-box"
                 autoComplete="off"
               />
-              <button className="action-btn btn-scale-anim">SUBMIT</button>
+              <a
+                href="mailto:irabruce20@gmail.com"
+                target="_blank"
+                className=" text-lg font-medium py-2 text-center  pb-5 block action-btn btn-scale-anim"
+              >
+                SUBMIT
+              </a>
             </form>
           </div>
         </div>
