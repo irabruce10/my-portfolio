@@ -38,7 +38,7 @@ export const NavBar = () => {
         {/*Logo*/}
         <div className={satisfy.className}>
           <h1 className="px-2">
-            👋 Hi, I'm{' '}
+            👋 Hi, I'm
             <span className="text-primary font-bold px-2 text-sm lg:text-2xl">
               Bruce IRAKOZE
             </span>
@@ -91,11 +91,14 @@ export const NavBar = () => {
             </li>
           ))}
         </ul>
-        <li className="hidden md:block h-12 text-[15px] font-medium text-white bg-gradient-primary rounded-full px-9 transition-transform duration-300 ease-in-out hover:scale-105">
+
+        <li
+          className={`hidden md:block h-12 text-[15px] font-medium text-white bg-gradient-primary rounded-full px-9 transition-transform duration-300 ease-in-out hover:scale-105 ${satisfy.className}`}
+        >
           <a
             href="mailto:irabruce20@gmail.com"
             target="_blank"
-            className="block  py-3 font-semibold"
+            className="block  py-3 font-bold  text-xl"
           >
             Hire me
           </a>
