@@ -26,7 +26,12 @@ export const ProjectCard = ({
         <div className="flex flex-wrap gap-2 mt-2">
           {tags.map((tag, index) => (
             <div key={index}>
-              {tag === 'Github' ? (
+              {tag === 'Loading' && (
+                <div className="text-xs text-primary bg-orange-100 px-3 py-1 rounded">
+                  {tag}
+                </div>
+              )}
+              {tag === 'Github' && (
                 <Link
                   href={`${linkGit}?tag=${tag}`}
                   target="blanket"
@@ -34,7 +39,8 @@ export const ProjectCard = ({
                 >
                   {tag}
                 </Link>
-              ) : (
+              )}
+              {tag === 'Live View' && (
                 <Link
                   href={`${linkLive}?tag=${tag}`}
                   target="blanket"
