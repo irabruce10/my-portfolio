@@ -13,6 +13,7 @@ import {
   FaNode,
   FaTypeScript,
   FaFigma,
+  FaVoicemail,
 } from 'react-icons/fa';
 
 import { BiLogoTailwindCss } from 'react-icons/bi';
@@ -44,6 +45,7 @@ import {
 import { VscVscode } from 'react-icons/vsc';
 import { IoLogoJavascript } from 'react-icons/io';
 import { IoLogoFirebase } from 'react-icons/io5';
+import { MdOutlineMarkEmailUnread } from 'react-icons/md';
 
 export const Menu_Links = [
   { id: '01', label: 'Home', offset: -100, to: 'home' },
@@ -428,6 +430,12 @@ export const ABOUT_ME = {
       link: 'https://www.linkedin.com/in/bruce-irakoze-421816230/',
       icon: FaLinkedinIn,
     },
+    {
+      id: '05',
+      label: 'email',
+      link: 'https://mail.google.com/mail/u/0/#inbox?compose=new',
+      icon: MdOutlineMarkEmailUnread,
+    },
   ],
   email: 'irabruce20@gmail.com',
   phone: '+43 681 10842361',
@@ -461,12 +469,12 @@ export const PROJECTS = [
     linkGit: '',
     linkLive: '',
   },
-  // {
-  //   id: '04',
-  //   title: 'Project 4',
-  //   image: '/images/project4.png',
-  //   tags: ['Github', 'Live View'],
-  //   linkGit: 'https://github.com/irabruce10',
-  //   linkLive: 'https://google.com',
-  // },
+  {
+    id: '04',
+    title: 'Project 4',
+    image: '/images/project4.png',
+    tags: ['Loading', 'Loading'],
+    linkGit: '',
+    linkLive: '',
+  },
 ];
