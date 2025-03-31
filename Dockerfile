@@ -79,8 +79,7 @@ RUN npm install
 COPY . .
 
 # Build and export the app (make sure your package.json has these scripts)
-RUN npm run build && npm run export
-
+RUN npm run build
 # Runner stage: serve the static files
 FROM node:18-alpine AS runner
 
