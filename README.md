@@ -76,9 +76,9 @@ flyctl deploy --remote-only
 
 If you have any questions, feel free to reach out!
 
-- LinkedIn: [Your Profile](https://www.linkedin.com/in/bruce-irakoze-421816230/)
-- Twitter: [@yourhandle](https://x.com/dev_IraBruce)
-- Email: [your.email@example.com](mailto:irabruce20@gmail.com)
+- LinkedIn: [Bruce Irakoze](https://www.linkedin.com/in/bruce-irakoze-421816230/)
+- Twitter: [@dev_IraBruce](https://x.com/dev_IraBruce)
+- Email: [irabruce20@gmail.com](mailto:irabruce20@gmail.com)
 
 ---
 
