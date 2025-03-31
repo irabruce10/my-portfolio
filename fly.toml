@@ -1,0 +1,32 @@
+# fly.toml app configuration file generated for bruce-irakoze-wild-dew-4668 on 2025-03-31T19:23:36+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'bruce-irakoze'
+primary_region = 'otp'
+
+[build]
+
+
+[mounts]
+  source = "postgres"
+  destination = "/postgres-volume"
+
+[env]
+  PORT = '8080'
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = 'off'
+  auto_start_machines = true
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+
+[[statics]]
+guest_path = "/out"
+url_prefix = "/"
