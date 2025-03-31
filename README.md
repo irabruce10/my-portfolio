@@ -31,4 +31,61 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel -->
 
-// generates the readme file for this project
+
+# 🌐 My Portfolio
+
+Welcome to my portfolio! This project showcases my work, skills, and projects as a Fullstack Developer. Built with modern web technologies, it delivers a responsive and interactive user experience.
+
+## 🚀 Features
+
+- Fully responsive design
+- Modern UI/UX
+- Optimized performance
+- Dark mode support
+- SEO-friendly
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, React, TypeScript, Tailwind CSS
+- **Backend:** Node.js, Express, Supabase
+- **Deployment:** Fly.io, Vercel
+
+## 📦 Installation
+
+To run the project locally, follow these steps:
+
+```sh
+# Clone the repository
+git clone https://github.com/your-username/your-portfolio.git
+
+# Navigate into the project folder
+cd your-portfolio
+
+# Install dependencies
+npm install  # or yarn install
+
+# Run the development server
+npm run dev  # or yarn dev
+```
+
+## 🚀 Deployment
+
+This portfolio is deployed on Fly.io. To deploy updates:
+
+```sh
+flyctl deploy --remote-only
+```
+
+## 📬 Contact
+
+If you have any questions, feel free to reach out!
+
+- LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
+- Twitter: [@yourhandle](https://twitter.com/yourhandle)
+- Email: [your.email@example.com](mailto\:your.email@example.com)
+
+---
+
+Made with ❤️ by Bruce IRAKOZE
+
+
