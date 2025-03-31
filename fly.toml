@@ -27,6 +27,6 @@ primary_region = 'otp'
   cpu_kind = 'shared'
   cpus = 1
 
-[[statics]]
-guest_path = "/out"
-url_prefix = "/"
+# [[statics]]
+# guest_path = "/out"
+# url_prefix = "/"
