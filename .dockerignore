@@ -1,3 +1,43 @@
+# # Secrets
+# *.env
+# .env.test
+# .env*.local
+# .env.development
+
+# # Scripts
+# *.sql
+
+# # Documentation
+# README.md
+
+# # Next.js build artifacts
+# build
+# .vercel
+# .next
+
+
+
+# # Dependencies
+# node_modules
+
+# # Git and GitHub
+# .git
+# .github
+
+# # Linting, formatting config
+# .eslintcache
+# .eslintignore
+# .eslintrc
+# prettier.config.cjs
+
+# # Docker
+# Dockerfile
+# .dockerignore
+
+# # TypeScript cache
+# .tsbuildinfo
+
+
 # Secrets
 *.env
 .env.test
@@ -10,12 +50,10 @@
 # Documentation
 README.md
 
-# Next.js build artifacts
+# Next.js build artifacts (if you use these, they will be ignored)
 build
 .vercel
 .next
-
-
 
 # Dependencies
 node_modules
@@ -30,7 +68,7 @@ node_modules
 .eslintrc
 prettier.config.cjs
 
-# Docker
+# Docker (if you want to include the Dockerfile in the image, remove these lines)
 Dockerfile
 .dockerignore
 
