@@ -29,19 +29,38 @@
 # COPY --from=builder /app/next.config.mjs ./
 
 
-# Use a minimal Node.js image
-FROM node:18-alpine
+# # Use a minimal Node.js image
+# FROM node:18-alpine
+
+# WORKDIR /app
+
+# # Copy the static files (make sure you’ve run `next export` so that out/ exists)
+# COPY out/ .
+
+# # Install a static file server globally (serve is one option)
+# RUN npm install -g serve
+
+# # Expose the port that your app will listen on
+# EXPOSE 8080
+
+# # Start the static server on port 8080, serving the current directory
+# CMD ["serve", "-s", ".", "-l", "8080"]
+FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-# Copy the static files (make sure you’ve run `next export` so that out/ exists)
-COPY out/ .
+# Install dependencies
+COPY package.json package-lock.json ./
+RUN npm install
 
-# Install a static file server globally (serve is one option)
-RUN npm install -g serve
+# Copy all files and build
+COPY . .
+RUN npm run build
 
-# Expose the port that your app will listen on
-EXPOSE 8080
+FROM node:18-alpine AS runner
+WORKDIR /app
 
-# Start the static server on port 8080, serving the current directory
-CMD ["serve", "-s", ".", "-l", "8080"]
+# Copy the build output from the builder stage (adjust the path if needed)
+COPY --from=builder /app/out ./out
+
+CMD ["npm", "start"]
