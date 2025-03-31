@@ -1,7 +1,3 @@
-# fly.toml app configuration file generated for bruce-irakoze-wild-dew-4668 on 2025-03-31T19:23:36+02:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
 
 app = 'bruce-irakoze'
 primary_region = 'otp'
@@ -26,7 +22,3 @@ primary_region = 'otp'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
-
-# [[statics]]
-# guest_path = "/out"
-# url_prefix = "/"
