@@ -11,7 +11,7 @@ Welcome to my portfolio! This project showcases my work, skills, and projects as
 ## 🛠️ Tech Stack
 
 - **Frontend:** Next.js, Tailwind CSS
-- **Deployment:** Fly.io, Vercel
+- **Deployment:** Fly.io
 
 ## 📦 Installation
 
