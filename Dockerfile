@@ -45,22 +45,53 @@
 
 # # Start the static server on port 8080, serving the current directory
 # CMD ["serve", "-s", ".", "-l", "8080"]
+# FROM node:18-alpine AS builder
+
+# WORKDIR /app
+
+# # Install dependencies
+# COPY package.json ./
+# RUN npm install
+
+# # Copy all files and build
+# COPY . .
+# RUN npm run build
+
+# FROM node:18-alpine AS runner
+# WORKDIR /app
+
+# # Copy the build output from the builder stage (adjust the path if needed)
+# COPY --from=builder /app/out ./out
+
+# CMD ["npm", "start"]
+
+
+# Builder stage: install dependencies and build the app
 FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-# Install dependencies
-COPY package.json ./
+# Copy package files and install dependencies
+COPY package.json package-lock.json ./
 RUN npm install
 
-# Copy all files and build
+# Copy all source files
 COPY . .
-RUN npm run build
 
+# Build and export the app (make sure your package.json has these scripts)
+RUN npm run build && npm run export
+
+# Runner stage: serve the static files
 FROM node:18-alpine AS runner
+
 WORKDIR /app
 
-# Copy the build output from the builder stage (adjust the path if needed)
+# Copy the generated output from the builder stage
 COPY --from=builder /app/out ./out
 
-CMD ["npm", "start"]
+# Install a lightweight static file server (e.g., serve)
+RUN npm install -g serve
+
+# Expose the port and start the server
+EXPOSE 8080
+CMD ["serve", "-s", "out", "-l", "8080"]
