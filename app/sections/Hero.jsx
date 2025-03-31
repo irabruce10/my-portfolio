@@ -27,7 +27,7 @@ export const Hero = () => {
             👋 Hi, I'm Bruce IRAKOZE
           </h3> */}
           <h1 className="w-full lg:w-[480px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] mt-3 bg-gradient-primary bg-clip-text text-transparent ">
-            Building scalable & User Centric Web Apps.hello bro how ar u ok...
+            Building scalable & User Centric Web Apps.
           </h1>
           <p className="w-full lg:w-[500px] lg:text-base mt-4">
             I'm a passionate Fullstack Developer crafting responsive,
