@@ -450,7 +450,7 @@ export const PROJECTS = [
     tags: ['Github', 'Live View'],
     icon: [FaGithub, FaLinkedin],
     linkGit: 'https://github.com/irabruce10/next.js-ecommerce-store',
-    linkLive: 'https://e-soko.fly.dev/',
+    linkLive: 'https://esoko.fly.dev/',
   },
   {
     id: '02',
