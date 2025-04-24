@@ -455,7 +455,7 @@ export const PROJECTS = [
   {
     id: '02',
     title: 'AKAGURIRO - REACT NATIVE MOBILE APPLICATION',
-    image: '/images/project2.png',
+    image: '/images/project22.png',
     tags: ['Github', 'Live View'],
     linkGit: 'https://github.com/irabruce10/akaguriro',
     linkLive:
@@ -464,7 +464,7 @@ export const PROJECTS = [
   {
     id: '03',
     title: 'Project 3',
-    image: '/images/project3.png',
+    image: '/images/project33.png',
     tags: ['Loading', 'Loading'],
     linkGit: '',
     linkLive: '',
@@ -472,7 +472,7 @@ export const PROJECTS = [
   {
     id: '04',
     title: 'Project 4',
-    image: '/images/project4.png',
+    image: '/images/loading.png',
     tags: ['Loading', 'Loading'],
     linkGit: '',
     linkLive: '',
