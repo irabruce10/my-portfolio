@@ -444,7 +444,16 @@ export const ABOUT_ME = {
 
 export const PROJECTS = [
   {
-    id: '01',
+    id: '06',
+    title: 'Time4Care - NEXTJS HealthCare Management System ',
+    image: '/images/Time4Care.png',
+    tags: ['Github', 'Live View'],
+    icon: [FaGithub, FaLinkedin],
+    linkGit: 'https://github.com/irabruce10/time4care',
+    linkLive: 'https://time4care-web.vercel.app/',
+  },
+  {
+    id: '07',
     title: 'E-SOKO - NEXTJS Ecommerce Web Store',
     image: '/images/project1.png',
     tags: ['Github', 'Live View'],
@@ -453,7 +462,7 @@ export const PROJECTS = [
     linkLive: 'https://esoko.fly.dev/',
   },
   {
-    id: '02',
+    id: '08',
     title: 'AKAGURIRO - REACT NATIVE MOBILE APPLICATION',
     image: '/images/project22.png',
     tags: ['Github', 'Live View'],
@@ -462,7 +471,7 @@ export const PROJECTS = [
       'https://firebasestorage.googleapis.com/v0/b/apartmstorage.firebasestorage.app/o/VIDEO%2FAkaguriro--Presentation.mp4?alt=media&token=0cf69dbf-2c42-4695-9706-7f81af5674de',
   },
   {
-    id: '03',
+    id: '09',
     title: 'Project 3',
     image: '/images/project33.png',
     tags: ['Loading', 'Loading'],
@@ -470,7 +479,7 @@ export const PROJECTS = [
     linkLive: '',
   },
   {
-    id: '04',
+    id: '10',
     title: 'Project 4',
     image: '/images/loading.png',
     tags: ['Loading', 'Loading'],
