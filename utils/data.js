@@ -57,9 +57,9 @@ export const Menu_Links = [
 
 export const STATS = [
   { id: '01', count: '01', label: 'Year of \nExperience' },
-  { id: '02', count: '03', label: 'Projects \nCompleted' },
+  { id: '02', count: '05', label: 'Projects \nCompleted' },
   { id: '03', count: '06', label: 'GitHub \nStars' },
-  { id: '04', count: '60+', label: 'Repositories \nOn GitHub' },
+  { id: '04', count: '64+', label: 'Repositories \nOn GitHub' },
 ];
 
 export const SKILL_TABS = [
@@ -92,7 +92,6 @@ export const SKILLS = [
       'Styling language used to design visually appealing and responsive web pages. It controls the layout, colors, fonts, spacing, and overall visual appearance of web elements.',
   },
 
-  //tailwind css
   {
     id: '03',
     icon: BiLogoTailwindCss,
@@ -443,6 +442,16 @@ export const ABOUT_ME = {
 };
 
 export const PROJECTS = [
+  {
+    id: '05',
+    title: 'HomiFind - Expo SDK 53 Estate Application ',
+    image: '/images/Homifind.png',
+    tags: ['Github', 'Live View'],
+    icon: [FaGithub, FaLinkedin],
+    linkGit: 'https://github.com/irabruce10/HomiFind',
+    linkLive: 'https://homi-find.vercel.app/',
+  },
+
   {
     id: '06',
     title: 'Time4Care - NEXTJS HealthCare Management System ',
